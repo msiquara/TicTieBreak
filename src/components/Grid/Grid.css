@@ -31,7 +31,6 @@
     align-items: center;
     justify-content: center;    
     background-color: black;
-    font-size: calc(3vh + 3.5vw);
     height: calc(5.5vh + 5vw);
     width: calc(5.5vh + 5vw);
 
@@ -45,7 +44,8 @@
 /* NEON TEXT */
 
 .xsymbol {
-    animation: zoomin .7s forwards;
+    font-size: calc(3vh + 3.5vw);
+    animation: x_zoomin .7s forwards;
     pointer-events: none;
     color: #fff;
     text-shadow:
@@ -57,16 +57,26 @@
         0 0 45px rgb(255, 0, 0)
 }
 
+.xsymbol__fade {
+    font-size: calc(3vh + 3.5vw);
+    pointer-events: none;
+    color: #b5b5b5;
+    text-shadow:
+        0 0 5px rgb(200, 73, 73),
+        0 0 10px rgb(200, 73, 73);
+}
+
 .xsymbol__winner {
+    font-size: calc(3vh + 3.5vw);
     color: white;
     animation: x_blink .8s ease-in-out infinite;
 }
 
 .osymbol {
-    animation: zoomin .7s forwards;
+    font-size: calc(2.5vh + 2.5vw);
+    animation: o_zoomin .7s forwards;
     pointer-events: none;
     color: #fff;
-    font-size: calc(3vh + 2.5vw);
     text-shadow:
         0 0 1px #fff,
         0 0 5px #fff,
@@ -77,20 +87,8 @@
         0 0 45px rgb(0, 0, 255);
 }
 
-.osymbol__winner {
-    color: white;
-    animation: o_blink .8s ease-in-out infinite;
-}
-
-.xsymbol__fade {
-    pointer-events: none;
-    color: #b5b5b5;
-    text-shadow:
-        0 0 5px rgb(200, 73, 73),
-        0 0 10px rgb(200, 73, 73);
-}
-
 .osymbol__fade {
+    font-size: calc(2.5vh + 2.5vw);
     pointer-events: none;
     color: #b5b5b5;
     text-shadow:
@@ -99,7 +97,13 @@
         0 0 10px rgb(73, 73, 200);
 }
 
-@keyframes zoomin {
+.osymbol__winner {
+    font-size: calc(2.5vh + 2.5vw);
+    color: white;
+    animation: o_blink .8s ease-in-out infinite;
+}
+
+@keyframes x_zoomin {
     0%{
         font-size: calc(0vh + .5vw);
     }
@@ -107,6 +111,17 @@
         font-size: calc(3vh + 3.5vw);
     }
 }
+
+@keyframes o_zoomin {
+    0%{
+        font-size: calc(0vh + .5vw);
+    }
+    100%{
+        font-size: calc(2.5vh + 2.5vw);
+    }
+}
+
+
 
 @keyframes x_blink {
     0%, 100% {
