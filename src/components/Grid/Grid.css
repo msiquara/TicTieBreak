@@ -28,6 +28,7 @@
 
 .sqr {
     display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     align-items: center;
     justify-content: center;    
     background-color: black;
@@ -44,7 +45,7 @@
 /* NEON TEXT */
 
 .xsymbol {
-    font-size: calc(3vh + 3vw);
+    font-size: calc(3vh + 3.5vw);
     animation: x_zoomin .7s forwards;
     pointer-events: none;
     color: #fff;
@@ -58,7 +59,7 @@
 }
 
 .xsymbol__fade {
-    font-size: calc(3vh + 3vw);
+    font-size: calc(3vh + 3.5vw);
     pointer-events: none;
     color: #b5b5b5;
     text-shadow:
@@ -67,7 +68,7 @@
 }
 
 .xsymbol__winner {
-    font-size: calc(3vh + 3vw);
+    font-size: calc(3vh + 3.5vw);
     color: white;
     animation: x_blink .8s ease-in-out infinite;
 }
