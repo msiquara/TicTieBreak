@@ -23,8 +23,13 @@ function App() {
 	var FontFaceObserver = require('fontfaceobserver')
 
 	const game_title = new FontFaceObserver('Gobahtrial')
+	const grid_font = new FontFaceObserver('Roboto')
 
 	game_title.load().catch(e =>{
+		console.error(e)
+	})
+
+	grid_font.load().catch(e =>{
 		console.error(e)
 	})
 
