@@ -28,6 +28,7 @@
 
 .sqr {
     display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     align-items: center;
     justify-content: center;    
     background-color: black;
