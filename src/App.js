@@ -217,7 +217,7 @@ function App() {
 			
 			checkWin(x_history, 'x')		
 		} else {
-			target.innerHTML = '⨀'
+			target.innerHTML = '◯'
 			o_sound.load()
 			o_sound.play()
 			target.classList.toggle('osymbol')
